@@ -1,0 +1,296 @@
+@charset "UTF-8";
+.content {
+  min-width: 870px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000000;
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 23px 15px 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+  margin-bottom: 20px;
+}
+
+.content .top .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 5px;
+}
+
+.content .top .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 330px;
+}
+
+.content .top .count_people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .top .count_people .icon_people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0.4;
+  padding-right: 6px;
+}
+
+.content .top .count_people .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #a4a4a4;
+  opacity: 0.4;
+  padding-right: 24px;
+}
+
+.content .top .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  border-radius: 6px;
+  width: 241px;
+  padding: 8px 8px 8px 16px;
+  margin-right: 23px;
+}
+
+.content .top .search input[type='search'] {
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.content .top .search input[type='image'] {
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  background-image: url(../../images/content/loupe.svg);
+  background-repeat: no-repeat;
+}
+
+.content .top .bell {
+  width: 20px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.content .top .bell .notifications {
+  position: absolute;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  top: 4px;
+  left: 13px;
+}
+
+.content .top .ellipsis {
+  display: block;
+}
+
+.content .top .ellipsis .dot {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
+.content .communication {
+  height: 650px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #00000021 #ffffff81;
+  border-radius: 1px solid;
+  scrollbar-width: thin;
+  /* ползунок скроллбара */
+  padding: 0 23px 0 23px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.content .communication::-webkit-scrollbar {
+  width: 8px;
+  /* ширина для вертикального скролла */
+  height: 8px;
+  /* высота для горизонтального скролла */
+  background-color: #ffffff81;
+}
+
+.content .communication::-webkit-scrollbar-thumb {
+  background-color: #00000021;
+}
+
+.content .communication::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff18;
+}
+
+.content .communication .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 12px;
+  padding-bottom: 14px;
+}
+
+.content .communication .message.extended {
+  padding: 0;
+  height: 260px;
+}
+
+.content .communication .message_profile {
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.content .communication .message .header {
+  height: 14px;
+}
+
+.content .communication .message .header_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .communication .message .header_time {
+  margin-left: 8px;
+  color: #8d8d8d;
+}
+
+.content .communication .message .information {
+  color: black;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.content .communication .message .sent_photo .name_photo {
+  padding-bottom: 10px;
+  color: #3577ef;
+}
+
+.content .communication .message .sent_photo .after_photo {
+  position: relative;
+}
+
+.content .communication .message .sent_photo .after_photo::after {
+  content: '😍 ' '3 ';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 140%;
+  position: relative;
+  width: 45px;
+  height: 25px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 6px -3px;
+          box-shadow: 0px 1px 6px -3px;
+  border-radius: 5px;
+  left: 247px;
+  bottom: 20px;
+}
+
+.content .communication .message .sent_photo .after_photo .options_photo {
+  border-radius: 6px;
+}
+
+.content .communication .date {
+  font-size: 13px;
+  margin: -3px auto -0.45em;
+  overflow: hidden;
+  text-align: center;
+  line-height: 14px;
+  color: #8d8d8d;
+  margin-bottom: 14px;
+}
+
+.content .communication .date:before, .content .communication .date:after {
+  content: '';
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  height: 9px;
+  border-bottom: 1px solid #8d8d8d;
+  margin: 0 2% 0 -55%;
+}
+
+.content .communication .date:after {
+  margin: 0 -55% 0 2%;
+}
+
+.content .sms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 25px 22px 25px 22px;
+}
+
+.content .sms .clip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 18px;
+}
+
+.content .sms .microphone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+}
+
+.content .sms input[type='write'] {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  width: 736px;
+}
+
+.content .sms .stickers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.navigation2 {
+  display: block;
+  background-color: #25272a;
+  width: 262px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 35px 25px 15px 25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navigation2 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.navigation2 .header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  padding-right: 7px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation2 .header .icon.gear {
+  margin-left: auto;
+  position: relative;
+  bottom: -4px;
+}
+
+.navigation2 .treads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #b5b5b5;
+  padding-bottom: 30px;
+}
+
+.navigation2 .treads .icon_message {
+  padding-right: 11px;
+}
+
+.navigation2 .channels {
+  padding-bottom: 17px;
+}
+
+.navigation2 .channels .channels_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #919191;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation2 .channels .buttons {
+  width: 229px;
+  height: 260px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #ffffff21 #25272a;
+  border-radius: 1px solid;
+  scrollbar-width: thin;
+  /* ползунок скроллбара */
+}
+
+.navigation2 .channels .buttons::-webkit-scrollbar {
+  width: 8px;
+  /* ширина для вертикального скролла */
+  height: 8px;
+  /* высота для горизонтального скролла */
+  background-color: #25272a;
+}
+
+.navigation2 .channels .buttons::-webkit-scrollbar-thumb {
+  background-color: #ffffff21;
+}
+
+.navigation2 .channels .buttons::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff18;
+}
+
+.navigation2 .channels .buttons .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 213px;
+  height: 30px;
+  border: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  opacity: 0px;
+  background-color: #25272a;
+  padding-left: 13px;
+  font-size: 14px;
+  color: #b5b5b5;
+  -webkit-transition: color 0.7s, background-color 0.7s;
+  transition: color 0.7s, background-color 0.7s;
+}
+
+.navigation2 .channels .buttons .button:hover {
+  background-color: rgba(250, 250, 250, 0.199);
+  color: white;
+  cursor: pointer;
+}
+
+.navigation2 .friends .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: #919191;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 22px;
+}
+
+.navigation2 .friends .list .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  left: 15px;
+  margin-bottom: 12px;
+}
+
+.navigation2 .friends .list .profile:last-child {
+  margin-bottom: 0;
+}
+
+.navigation2 .friends .list .profile::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #70cc16;
+  left: -14px;
+  top: calc(50% - 4px);
+}
+
+.navigation2 .friends .list .profile_image {
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.navigation2 .friends .list .profile_name {
+  font-size: 14px;
+  color: #b5b5b5;
+}
+
+.navigation2 .friends .list .profile_offline::before {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #666666;
+  left: -14px;
+  top: calc(50% - 4px);
+}

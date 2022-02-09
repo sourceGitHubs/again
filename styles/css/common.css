@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+body {
+  margin: 0;
+}
+
+body .chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'lato';
+}
+
+button:focus {
+  outline: none;
+}

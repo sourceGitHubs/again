@@ -1,0 +1,102 @@
+.user_profile {
+  display: block;
+  width: 200px;
+  background-color: #dde1e5;
+}
+
+.user_profile .contact {
+  padding: 14px 20px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.user_profile .contact .user_name {
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.user_profile .contact .user_name::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #70cc16;
+  right: 41px;
+  bottom: 6px;
+}
+
+.user_profile .contact .speciality {
+  font-size: 12px;
+  color: #5f6164;
+  margin-bottom: 20px;
+}
+
+.user_profile .contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.user_profile .contact .social_shape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22px;
+  height: 22px;
+  background-color: #e8e8eb;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.user_profile .contact .social_shape .social_icon {
+  margin: auto;
+}
+
+.user_profile .contact .social_shape:last-child {
+  margin-right: 0px;
+}
+
+.user_profile .contact .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.user_profile .contact .message .button {
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 25px;
+  text-align: center;
+  background-color: #3577ef;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-right: 2px;
+}
+
+.user_profile .contact .message .button:last-child {
+  width: 20%;
+  margin-right: 0px;
+  position: relative;
+}
+
+.user_profile .contact .message .button:last-child .down {
+  padding-bottom: 6px;
+}
+
+.user_profile .contact .other {
+  font-size: 14px;
+  margin-bottom: 11px;
+}
+
+.user_profile .contact .other_header {
+  font-size: 12px;
+  color: #5f6164;
+}
